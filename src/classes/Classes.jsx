@@ -1,5 +1,5 @@
 import React from "react";
-import "./classes.css";
+//import "./classes.css";
 
 const Classes = () => (
     <section className="classes">

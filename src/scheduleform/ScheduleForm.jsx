@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./scheduleform.css";
+//import "./scheduleform.css";
 
 const ScheduleForm = () => {
     const [formData, setFormData] = useState({
@@ -42,7 +42,7 @@ const ScheduleForm = () => {
                 <input type="text" name="name" placeholder="Seu Nome" value={formData.name} onChange={handleChange} required />
                 <input type="email" name="email" placeholder="Seu Email" value={formData.email} onChange={handleChange} required />
                 
-                <div className="checkbox-group">
+                <div className="checkbox-group" style={{display: "flex"}}>
                     <label>
                         <input type="radio" name="location" onChange={() => handleLocationChange("studio")} checked={formData.location === "studio"} />
                         No estúdio
@@ -58,7 +58,7 @@ const ScheduleForm = () => {
                 )}
 
                 {formData.location === "studio" && (
-                    <div className="locations">
+                    <div className="locations" style={{display: "flex", gap: "15px"}}>
                         <button type="button" onClick={() => setFormData({ ...formData, address: "Local 1" })}>Local 1</button>
                         <button type="button" onClick={() => setFormData({ ...formData, address: "Local 2" })}>Local 2</button>
                     </div>

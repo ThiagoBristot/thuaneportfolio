@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./header.css";
+//import "./header.css";
 
 export default class Header extends Component {
     render() {
@@ -21,9 +21,7 @@ export default class Header extends Component {
                                 <li>
                                     <a href="">Sobre as aulas</a>
                                 </li>
-                                <li>
-                                    <a href=""></a>
-                                </li>
+                                
                                 <button>Agendar horário</button>
                             </ul>
                         </nav>
