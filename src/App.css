@@ -1,0 +1,13 @@
+/* Estilo Geral */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Alinhamento Principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d5efff;
+}
