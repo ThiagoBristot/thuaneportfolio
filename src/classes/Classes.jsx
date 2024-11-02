@@ -7,12 +7,22 @@ const Classes = () => (
         <p>Oferecemos aulas personalizadas de Pilates e Yoga que ajudam no equilíbrio entre corpo e mente...</p>
         
         <div className="gallery">
-            <div className="gallery-item image-placeholder"></div>
-            <div className="gallery-item image-placeholder"></div>
-            <div className="gallery-item video-placeholder"></div>
-            <div className="gallery-item video-placeholder"></div>
-            <div className="gallery-item image-placeholder"></div>
-            <div className="gallery-item video-placeholder"></div>
+            <div className="gallery-item">
+                <div className="media-container">
+                    <img src="" alt="img" />
+                </div>
+                <div className="description">
+                    <p>Descrição da imagem ou vídeo aqui</p>
+                </div>
+            </div>
+            <div className="gallery-item">
+                <div className="media-container">
+                    <video src="" controls></video>
+                </div>
+                <div className="description">
+                    <p>Descrição do vídeo aqui</p>
+                </div>
+            </div>
         </div>
     </section>
 );

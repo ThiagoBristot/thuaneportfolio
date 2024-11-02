@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import "./header.css";
+import { scrollToForm } from "../scheduleform/ScheduleForm"
 
 export default class Header extends Component {
     render() {
@@ -22,7 +22,7 @@ export default class Header extends Component {
                                     <a href="">Sobre as aulas</a>
                                 </li>
                                 
-                                <button>Agendar horário</button>
+                                <button onClick={scrollToForm}>Agendar horário</button>
                             </ul>
                         </nav>
                     </div>
