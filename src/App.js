@@ -1,10 +1,15 @@
 import React, { useRef } from 'react';
 import './App.css';
 import Header from "./header/Header";
-import Home from "./home/Home";
+import HeroSection from './HeroSection';
+import BenefitsSection from './BenefitsSection';
+import TestimonialsSection from './TestimonialsSection';
 import AboutMe from './aboutme/Aboutme';
 import Classes from './classes/Classes';
 import ScheduleForm from './scheduleform/ScheduleForm';
+import CourseCard from './CourseCard';
+import PricingSection from './PricingSection';
+import Footer from './Footer';
 
 function App() {
   const homeRef = useRef(null);
@@ -27,10 +32,13 @@ function App() {
   return (
     <div className="App">
       <Header scrollToSection={scrollToSection} />
-      <section ref={homeRef}><Home /></section>
+      <section ref={homeRef}><HeroSection /></section>
+      <BenefitsSection />
       <section ref={aboutMeRef}><AboutMe /></section>
       <section ref={classesRef}><Classes /></section>
       <section ref={formularioRef}><ScheduleForm /></section>
+      <CourseCard/>
+      <PricingSection/>
     </div>
   );
 }
